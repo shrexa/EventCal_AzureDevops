@@ -38,8 +38,6 @@ namespace Events.Calendar.Controllers
             return Ok(locationsModel);
         }
 
-
-        //xyz
         // GET: api/Location/5
         [HttpGet("{id}")]
         public async Task<ActionResult<ModelNs.LocationModel>> GetLocation(Guid id)
@@ -59,7 +57,7 @@ namespace Events.Calendar.Controllers
             };
             return Ok(locationsModel);
         }
-
+        
 
 
         //PUT: api/Location/5
@@ -132,3 +130,5 @@ namespace Events.Calendar.Controllers
         {
             return _context.Location.Any(e => e.Id == id);
         }
+    }
+}
